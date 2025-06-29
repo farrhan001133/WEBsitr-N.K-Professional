@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>N.K RO & CCTV Sales Corporation</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS Library for Scroll Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+  <!-- Font Awesome for WhatsApp icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="logo.jpg.jpg" alt="Logo">
+      <h1>N.K RO & CCTV  Store</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="#services">Products</a></li>
+        <li><a href="#contact-us">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h2>Luxury Water Purification & CCTV Solutions</h2>
+      <p>Trusted Quality | Modern Technology | Best Support</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about-us" class="about-us"></section>
+  <!-- ABOUT US -->
+<section class="about-us">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>N.K RO & CCTV Sales Corporation</strong></p>
+    <ul>
+      <li>Wide range of RO water purifiers for homes, offices, and businesses.</li>
+      <li>Modern CCTV camera systems for full security coverage.</li>
+      <li>Professional installation, maintenance & after-sales support.</li>
+    </ul>
+    <p><strong>Our Vision:</strong> To be the most reliable brand for RO systems and security solutions, bringing <strong>clean water and peace of mind</strong> to every household.</p>
+    <p><strong>Why Choose Us:</strong></p>
+    <ul>
+      <li>Trusted Products from Top Brands</li>
+      <li>Professional Installation & Service</li>
+      <li>Affordable Prices & Customized Solutions</li>
+      <li>Quick Response & Friendly Support</li>
+    </ul>
+    <p>Contact us today and secure your home & family with <strong>N.K RO & CCTV Sales Corporation</strong> – Safe Water. Safe Life.</p>
+  </div>
+</section>
+
+<!-- Products Section -->
+  <section id="services" class="services" data-aos="fade-up">
+    <h2>Our Products</h2>
+    <div class="service-list">
+      <div class="service-item" onclick="openModal('Livpure RO Water Purifier', 'livpure-allura-37995899125913.webp', 'High quality RO purifier for home & office.')"
+      data-aos="flip-up">
+        <img src="livpure-allura-37995899125913.webp" alt="Livpure Purifier">
+        <h3>Livpure RO Water Purifier</h3>
+        <p>Clean, safe, and pure drinking water for your family.</p>
+      </div>
+
+      <div class="service-item" onclick="openModal('CCTV Camera', 'pawel-czerwinski-zBTYRFCeaS0-unsplash.jpg', 'HD CCTV Camera with night vision & remote access.')"
+      data-aos="flip-up">
+        <img src="pawel-czerwinski-zBTYRFCeaS0-unsplash.jpg" alt="CCTV">
+        <h3>CCTV Camera</h3>
+        <p>High-definition surveillance with smart features.</p>
+      </div>
+
+      <!-- Add more products same way -->
+      <div class="service-item" onclick="openModal('Nexus RO Purifier', 'nexus-aquafresh.jpg', 'High Quality RO purifier for home and office.')"
+      data-aos="flip-up">
+        <img src="nexus-aquafresh.jpg" alt="Nexus RO Purifier">
+        <h3>Nexus RO Water Purifier</h3>
+        <p>Clean, safe, and pure drinking water for your family.</p>
+      </div>
+
+      <div class="service-item" onclick="openModal('Aqua Fresh RO', 'dr ro.webp', 'High Quality RO purifier for home and office.')"
+      data-aos="flip-up">
+        <img src="dr ro.webp" alt="Aqua Fresh RO">
+        <h3>Aqua Fresh RO Water Purifier</h3>
+        <p>Clean, safe, and pure drinking water for your family.</p>
+      </div>
+
+      <div class="service-item"onclick="openModal('CP PLUS Camera', 'mehmet-keskin-7_vedeLNRG4-unsplash.jpg', 'HD CCTV Camera with night vision & remote access.')"
+      data-aos="flip-up">
+        <img src="mehmet-keskin-7_vedeLNRG4-unsplash.jpg" alt="CP PLUS CCTV">
+        <h3>CP PLUS Camera</h3>
+        <p>High-definition surveillance with smart features.</p>
+      </div>
+
+      <div class="service-item"onclick="openModal('4 Camera Setup', 'WhatsApp-Image-2022-12-20-at-3.42.53-PM-768x768.jpeg', 'HD CCTV Camera with night vision & remote access.')"
+      data-aos="flip-up">
+        <img src="WhatsApp-Image-2022-12-20-at-3.42.53-PM-768x768.jpeg" alt="CCTV Setup">
+        <h3>4 Camera Setup</h3>
+        <p>Include The services is DVR, 4-camera, Memory, Wire, Cable, All Type installation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <a href="#" id="whatsappBtn" target="_blank" class="btn whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> Enquire on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <section id="contact-us" class="contact-us"></section>
+  <!-- CONTACT US -->
+<section class="contact-us">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>We are always ready to help you. Get in touch with us for any enquiry or support.</p>
+
+    <div class="contact-details">
+      <div class="contact-item">
+        <h3>Address</h3>
+        <p>A-21, Irahi Masjid Boring Road Jhotwara, Jaipur, Rajasthan</p>
+      </div>
+      <div class="contact-item">
+        <h3>Phone</h3>
+        <p><a href="tel:+911234567890">+91 7877607030</a></p>
+      </div>
+      <div class="contact-item">
+        <h3>Email</h3>
+        <p><a href="mailto:info@nkroandcctv.com">nktanveerro@cctvstore.com</a></p>
+      </div>
+      <div class="contact-item">
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/917877607030" target="_blank">Chat on WhatsApp</a></p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
